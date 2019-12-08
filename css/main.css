@@ -1,0 +1,775 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+	 ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+	 ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+	 ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+	 ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: local("../fonts/Proxima Nova Bold"), local("Proxima-Nova-Bold"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: local("../fonts/Proxima Nova Light"), local("ProximaNova-Light"), url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova EB';
+  src: url("../fonts/ProximaNova-Extrabld.eot");
+  src: local("../fonts/Proxima Nova Extrabold"), local("ProximaNova-Extrabld"), url("../fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+.header {
+  padding: 80px 0 100px; }
+  @media screen and (max-width: 768px) {
+    .header {
+      padding: 60px 0 100px; } }
+  .header .header-logo {
+    color: #fd6d6d;
+    font-size: 44px;
+    font-family: 'Proxima Nova'; }
+
+.worker-section {
+  margin-bottom: 150px; }
+  @media screen and (max-width: 768px) {
+    .worker-section {
+      margin-bottom: 80px; } }
+  @media screen and (max-width: 480px) {
+    .worker-section {
+      margin-bottom: 60px; } }
+  .worker-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .worker-section .block-img img {
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      .worker-section .block-img img {
+        display: none;
+        margin-bottom: 80px; } }
+  .worker-section .section-title {
+    color: #4f4c4d;
+    font-family: 'Proxima Nova';
+    margin-bottom: 20px; }
+    @media screen and (max-width: 480px) {
+      .worker-section .section-title {
+        font-size: 24px; } }
+  .worker-section .section-description {
+    color: #4f4c4d;
+    margin-bottom: 60px; }
+    @media screen and (max-width: 768px) {
+      .worker-section .section-description {
+        font-size: 22px; } }
+  .worker-section .section-btn {
+    color: #ffffff;
+    font-size: 15px;
+    max-width: 189px;
+    font-family: 'Proxima Nova';
+    border-radius: 31px;
+    background-color: #fd6d6d; }
+
+.info-section {
+  margin-bottom: 150px; }
+  @media screen and (max-width: 768px) {
+    .info-section {
+      margin-bottom: 80px; } }
+  @media screen and (max-width: 480px) {
+    .info-section {
+      margin-bottom: 60px; } }
+  .info-section .insider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 150px; }
+    @media screen and (max-width: 768px) {
+      .info-section .insider {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-bottom: 80px; } }
+    @media screen and (max-width: 480px) {
+      .info-section .insider {
+        margin-bottom: 60px; } }
+  .info-section .insider-content {
+    width: 45%; }
+    @media screen and (max-width: 768px) {
+      .info-section .insider-content {
+        width: 100%; } }
+    .info-section .insider-content:first-child {
+      margin-right: 10px; }
+  @media screen and (max-width: 768px) {
+    .info-section .section-title {
+      font-size: 24px; } }
+  .info-section .mod {
+    margin-bottom: 20px; }
+  @media screen and (max-width: 768px) {
+    .info-section .section-description {
+      font-size: 22px; } }
+  .info-section .section-link {
+    font-size: 15px;
+    font-family: 'Proxima Nova';
+    color: #4f4c4d;
+    text-decoration: underline; }
+    @media screen and (max-width: 480px) {
+      .info-section .section-link {
+        margin-left: 10px; } }
+  .info-section .section-btn {
+    margin-right: 34px; }
+    @media screen and (max-width: 480px) {
+      .info-section .section-btn {
+        margin-right: 0;
+        margin-bottom: 10px; } }
+  .info-section .block-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media screen and (max-width: 480px) {
+      .info-section .block-btn {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start; } }
+  .info-section .item {
+    font-family: 'Proxima Nova LT';
+    font-size: 22px;
+    color: #605d5e;
+    margin-bottom: 19px; }
+
+.search-section {
+  margin-bottom: 90px; }
+  @media screen and (max-width: 480px) {
+    .search-section {
+      margin-bottom: 30px; } }
+  .search-section .section-title {
+    margin-bottom: 30px;
+    max-width: 800px; }
+    @media screen and (max-width: 480px) {
+      .search-section .section-title {
+        font-size: 24px; } }
+  .search-section .search-block {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px; }
+    .search-section .search-block button {
+      background-color: TRANSPARENT;
+      border: none; }
+  .search-section .search {
+    border: none;
+    border-bottom: 2px solid #c1c1c1;
+    width: 60%;
+    color: #828282;
+    font-size: 20px;
+    line-height: 34px;
+    font-family: 'Proxima Nova LT';
+    margin-right: 10px; }
+    @media screen and (max-width: 768px) {
+      .search-section .search {
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 100%; } }
+    @media screen and (max-width: 480px) {
+      .search-section .search {
+        font-size: 19px; } }
+  .search-section .search-text {
+    color: #4f4c4d;
+    font-size: 21px;
+    line-height: 36px;
+    max-width: 460px; }
+    @media screen and (max-width: 768px) {
+      .search-section .search-text {
+        text-align: center; } }
+  .search-section .table-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 60px 0;
+    border-bottom: 2px solid #ebedee; }
+    .search-section .table-line:last-child {
+      border-bottom: none; }
+    @media screen and (max-width: 768px) {
+      .search-section .table-line {
+        padding: 30px 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+  .search-section .table-column {
+    color: #4f4c4d;
+    font-size: 19px;
+    font-family: "Proxima Nova";
+    width: 15%; }
+    @media screen and (max-width: 768px) {
+      .search-section .table-column {
+        width: 100%;
+        margin-bottom: 15px; } }
+    .search-section .table-column .green {
+      color: #2f9a41 !important; }
+    .search-section .table-column .yellow {
+      color: #fdcc03 !important; }
+  .search-section .table-column2 {
+    width: 45%;
+    font-family: 'Proxima Nova LT';
+    color: #605d5e;
+    font-size: 20px;
+    line-height: 35px; }
+    @media screen and (max-width: 768px) {
+      .search-section .table-column2 {
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 25px; } }
+    @media screen and (max-width: 480px) {
+      .search-section .table-column2 {
+        line-height: 30px;
+        font-size: 20px; } }
+  .search-section .table-column3 {
+    width: 20%;
+    padding-left: 14px; }
+    @media screen and (max-width: 768px) {
+      .search-section .table-column3 {
+        width: 100%;
+        margin-bottom: 15px;
+        padding-left: 0; } }
+    .search-section .table-column3 div {
+      color: #605d5e;
+      font-size: 17px;
+      font-family: 'Proxima Nova EB'; }
+      .search-section .table-column3 div:first-child {
+        font-family: 'Proxima Nova LT';
+        margin-bottom: 10px; }
+  .search-section .table-column4 {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
+    @media screen and (max-width: 768px) {
+      .search-section .table-column4 {
+        width: 100%; } }
+    .search-section .table-column4 .red {
+      display: block;
+      position: relative;
+      border-radius: 18px;
+      background-color: rgba(255, 94, 101, 0.28);
+      color: #605d5e;
+      font-size: 17px;
+      line-height: 24px;
+      padding: 5px 12px 5px 40px; }
+    .search-section .table-column4 .ball {
+      width: 20px;
+      height: 20px;
+      background-color: #ff5e65;
+      border-radius: 50%;
+      position: absolute;
+      left: 10px;
+      top: 51%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+
+.faq-section {
+  margin-bottom: 20px; }
+  .faq-section .faq-wrapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .faq-section .faq-wrapp {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+    @media screen and (max-width: 480px) {
+      .faq-section .faq-wrapp {
+        margin-bottom: 50px; } }
+  .faq-section .faq-block {
+    color: #4f4c4d;
+    font-size: 31px;
+    max-width: 330px;
+    margin-right: 10px; }
+    @media screen and (max-width: 768px) {
+      .faq-section .faq-block {
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 20px;
+        font-size: 28px; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .faq-section .faq-block {
+      font-size: 24px;
+      margin-bottom: 20px; } }
+    .faq-section .faq-block:last-child {
+      margin-right: 0; }
+  .faq-section .ansver {
+    color: #605d5e;
+    font-size: 22px;
+    font-family: "Proxima Nova LT";
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .faq-section .ansver {
+        font-size: 22px; } }
+
+* {
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Proxima Nova EB'; }
+
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0; }
+
+input {
+  outline: none;
+  -webkit-appearance: none; }
+
+textarea {
+  resize: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.container {
+  max-width: 900px;
+  padding: 0 10px;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 0 30px; } }
+
+.section-title {
+  font-family: 'Proxima Nova';
+  color: #4f4c4d;
+  font-size: 31px;
+  margin-bottom: 20px; }
+
+.section-description {
+  font-family: 'Proxima Nova LT';
+  color: #4f4c4d;
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 60px; }
+
+.section-btn {
+  color: #ffffff;
+  font-size: 15px;
+  max-width: 189px;
+  font-family: 'Proxima Nova';
+  padding: 14px 5px;
+  width: 100%;
+  text-align: center;
+  border-radius: 31px;
+  background-color: #fd6d6d; }
