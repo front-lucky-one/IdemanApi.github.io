@@ -65,7 +65,7 @@ function loadDataForList(name) {
 
     setInformation("Загрузка данных");
     return fetch(urlWithParams).then(function (response) {
-        console.log("RESPONSE", response);
+      
 
         if (response.status === 200) {
             return response.json();
