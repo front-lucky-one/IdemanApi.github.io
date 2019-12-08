@@ -89,7 +89,6 @@ function generateList(dataArray) {
 }
 
 function createElement(data) {
-    console.log(data);
     var element = document.createElement("div");
     element.classList.add("table-line");
     element.innerHTML = "\n            <div class=\"table-column\">".concat(data.name, "</div>\n            <div class=\"table-column2\">").concat(data.position, "</div>\n            <div class=\"table-column3\">\n                    <div>").concat(data.city, "</div>\n                    <div>").concat(data.experience, "</div>\n            </div>\n            <div class=\"table-column4\">\n                <span class=\"red\" style=\"background-color:").concat(data.color == undefined ? data.color : data.color.block, "\">\n                <span class=\"ball\" style=\"background-color:").concat(data.color == undefined ? data.color : data.color.ball, "\"></span>").concat(data.company, "</span>\n            </div>\n            ");
